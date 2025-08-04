@@ -1,13 +1,11 @@
-# seliya
+# Seliya
 
-# Amazing Safari
-
-[Amazing Safari](http://seliya.co.id) online store for sambal products .
+[Seliya](http://seliya.co.id) online store for sambal (chilli sauce) products.
 
 ## Links
 
 - Frontend Web: <https://seliya.co.id>
-- Backend API: <https://seliya-api.co.id>
+- Backend API: <https://api.seliya.co.id>
 
 Repositories:
 
@@ -88,27 +86,26 @@ Inspirations:
 
 ## REST API Endpoints
 
-- Production: ``
+- Production: `https://api.seliya.co.id`
 - Local: `http://localhost:3000`
 
-| Endpoint         | HTTP     | Description               |
-| ---------------- | -------- | ------------------------- |
-| `/products`      | `GET`    | Get all products          |
-| `/products/:id`  | `GET`    | Get product by id         |
-| `/products/seed` | `POST`   | Seed all initial products |
-| `/products`      | `POST`   | Add new product           |
-| `/products`      | `DELETE` | Delete all products       |
-| `/products/:id`  | `DELETE` | Delete product by id      |
-| `/products/:id`  | `PUT`    | Update product by id      |
+| Endpoint        | HTTP     | Description          |
+| --------------- | -------- | -------------------- |
+| `/products`     | `GET`    | Get all products     |
+| `/products/:id` | `GET`    | Get product by id    |
+| `/products`     | `POST`   | Add new product      |
+| `/products`     | `DELETE` | Delete all products  |
+| `/products/:id` | `DELETE` | Delete product by id |
+| `/products/:id` | `PUT`    | Update product by id |
 
 ### Product
 
 ```json
 {
   "id": "abc123",
-  "slug": "",
-  "name": "",
-  "price":
+  "slug": "sambal-apa",
+  "name": "Sambal Apa",
+  "price": 20000
 }
 ```
 
@@ -118,9 +115,8 @@ Request Body:
 
 ```json
 {
-  "name": "",
-  "price": ,
-  "color": ""
+  "name": "Sambal Sesuatu",,
+  "price": 30000,
 }
 ```
 
@@ -128,10 +124,9 @@ Response Body:
 
 ```json
 {
-  "id": "",
-  "slug": "",
-  "name": "",
-  "price": ,
-  "colors": ""
+  "id": "xyz789",
+  "slug": "sambal-sesuatu",
+  "name": "Sambal Sesuatu",
+  "price": 30000
 }
 ```
